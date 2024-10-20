@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4; /* Light gray background */
+    display: flex;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    background: #14171a; /* Dark background similar to X */
+    color: #ffffff; /* White text */
+    padding: 20px;
+    width: 250px;
+    height: 100vh; /* Full height */
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 80px; /* Adjust size as needed */
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #ffffff; /* White border */
+}
+
+.sidebar h2 {
+    color: #ffffff; /* White color for heading */
+    margin: 10px 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background: #1da1f2; /* Blue on hover */
+}
+
+.sidebar ul li span {
+    margin-right: 10px; /* Space between icon and text */
+    font-size: 20px; /* Icon size */
+}
+
+.main-content {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+h1 {
+    text-align: center;
+    color: #14171a; /* Darker gray */
+}
+
+.section {
+    margin: 20px 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.icon {
+    background: #ffffff; /* Light background for icons */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    width: 100px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.icon:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px;
+}
+
+.contact-form button {
+    align-self: flex-start;
+    background-color: #1da1f2; /* Twitter blue */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #1991db; /* Darker blue on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #14171a; /* Dark gray footer */
+    color: #fff;
+}
