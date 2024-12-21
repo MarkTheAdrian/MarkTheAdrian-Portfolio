@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .social-links {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 10px; /* Space between links */
+        }
+
+        .social-links li {
+            margin: 5px 0;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            color: #333; /* Change to your preferred color */
+            font-weight: bold;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #f0f0f0; /* Light background */
+            transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+        }
+
+        .social-links a:hover {
+            background-color: #007bff; /* Change on hover */
+            color: white; /* Change text color on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar" id="sidebar">
+            <div class="profile">
+                <img src="mark.jpg" alt="Your Name" class="profile-pic">
+                <h2>Mark Adrian J. Reyes</h2>
+            </div>
+            <ul>
+                <li><a href="#" data-target="about"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="#" data-target="portfolio"><i class="fas fa-folder-open"></i> Portfolio</a></li>
+                <li><a href="#" data-target="contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <header>
+                <h1>My Profile</h1>
+            </header>
+
+            <section id="about" class="section hidden">
+                <h2>About Me</h2>
+                <p>Welcome to my profile! I'm an enthusiastic computer science student committed to lifelong learning. Whether it's mastering new programming languages or contributing to open-source projects, I’m dedicated to making an impact in the tech community.</p>
+            </section>
+
+            <section id="portfolio" class="section hidden">
+                <h2>My Work</h2>
+                <p>Projects i've worked on will be posted here.</p>
+            </section>
+
+            <section id="contact" class="section hidden">
+                <h2>Contact Me On:</h2>
+                <ul class="social-links">
+                    <li><a href="https://www.facebook.com/profile.php?id=100034014307451" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+                    <li><a href="https://www.instagram.com/m.adrianreyes?igsh=ODkwbXp4bjF0NWc2" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="https://github.com/MarkTheAdrian" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+                    <li><a href="markadrianreyes60@gmail.com" target="_blank"><i class="fab fa-google"></i> Gmail</a></li> <!-- Added Gmail link -->
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 My Profile</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
